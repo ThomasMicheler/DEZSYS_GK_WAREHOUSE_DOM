@@ -62,7 +62,7 @@ Die Daten werden in der Zentrale in einem MongoDB Repository gespeichert und kö
   - Build and Run Exmample  
 	  `gradle clean bootRun`  
 
-  - Check Data in MongoDB
+  - Check Data in MongoDB   
     `docker exec -it mongo bash`
     `mongosh`
     `use test`
@@ -72,7 +72,7 @@ Die Daten werden in der Zentrale in einem MongoDB Repository gespeichert und kö
 
 *   Gruppengrösse: 1 Person
 *   Abgabemodus: per Protokoll und Abgabespraech
-*   Grundlagen Anforderungen **"überwiegend erfüllt"**
+*   Grundlagen Anforderungen **"Grundlagen"**
     * Installation und Konfiguration einer dokumentenorientierten Middleware mit einem Framework Ihrer Wahl und MongoDB
     * Entwurf und Umsetzung einer entsprechenden JSON Datenstruktur
     * Speicherung der Daten von nur einem Lagerstandort
@@ -81,20 +81,21 @@ Die Daten werden in der Zentrale in einem MongoDB Repository gespeichert und kö
     * REST API:
         - POST /product, GET /product, GET /warehouse
     * Beantwortung der Fragestellungen   
-*   Grundlagen Anforderungen **"zur Gänze erfüllt"**
     * 5 CRUD Operationen über Mongo Shell
       Dokumentieren Sie den Mongo Shell Befehl und dessen Ergebnis.
       Beispiel: ein Produkt hinzufügen, ein Produkt löschen, ein Produkt ändern, ...
-*   Erweiterte Anforderungen **"überwiegend erfüllt"**
+*   Erweiterte Anforderungen **"Erweiterte Grundlagen"**
     * Erweiterung der Datenstruktur, sodass ein Speicherung der Daten von mehreren Lagerstandorten möglich ist.
     * REST API: Implementierung der gesamten Schnittstelle, wie in der Angabe beschrieben
     * Implementieren Sie eine kleine Applikation, dass die Daten generiert und über das REST-Interfaces dieser Übung abspeichert.
       Dabei werden sowohl Produkte, als auch Lagerstandorte abgelegt.
-*   Erweiterte Anforderungen **"zur Gänze erfüllt"**
-    * Formulierung 3 sinnvollen Fragestellung für einen Anwendungsfall in der Zentrale und deren Abfragen in einer Mongo Shell.
+*   Erweiterte Anforderungen **"Vertiefung"**
+    * Formulierung 3 sinnvoller Fragestellungen für einen Anwendungsfall in der Zentrale und deren Abfragen in einer Mongo Shell.
       Beispiel:
       Wie ist der Lagerbestand von einem Produkt X über alle Lagerstandorte?
       Welche Produkte haben einen Lagerbestand von unter 10 Stück über alle Lagerstandorte?
+    * Implementieren Sie eine Schnittstelle zu einer AI Instanz (lokal Ollama, cloud-basiert Gemini), um die Daten zu übertragen und lassen Sie sich zu den  Fragestellungen einen Bericht / Grafik von der AI entwerfen. Dokumentieren Sie hier die Anfragen, die Ihre Applikation an die AI Instanz sendet.
+
 
 ## 1.6 Fragestellung für Protokoll
 
